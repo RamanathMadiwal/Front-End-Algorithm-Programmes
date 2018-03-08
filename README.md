@@ -2,6 +2,7 @@
 Front End Algorithm Programmes
 
 //1. Write code to find prime numbers efficiently
+```
 // function isPrimeNumber(num){
 //     //if number is 2 its prime
 //     if(num===2){
@@ -20,7 +21,7 @@ Front End Algorithm Programmes
 //     return true;
 // }
 //console.log(isPrimeNumber(17));
-
+```
 //******************************************************************************************************
 
 //2. write code to reverse string and integer
