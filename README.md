@@ -1,7 +1,6 @@
-# UI Web developer Javascript Interview Questions
+#     :red_circle: UI Web developer Javascript Interview Questions   :red_circle:
 
-   :red_circle:
-## 1. Write code to find prime numbers efficiently
+## 1. Write code to find prime numbers efficiently.
 
 ```
 function isPrime(num) {
@@ -27,9 +26,7 @@ function isPrime(num) {
 console.log(isPrime(23));
 ```
 
-//******************************************************************************************************
-
-## 2. write code to reverse string and integer
+## 2. write code to reverse string and integer.
 ```
 function reverseString(str){
 Step 1
@@ -62,7 +59,6 @@ console.log(subStringValue);
 reverseString("car");
 console.log(reverseString("car"));
 ```
-!******************************************************************************************************
 ```
 function reverseInteger(Intg){
     let str=Intg.toString();
@@ -82,9 +78,9 @@ function reverseInteger(Intg){
 }
 reverseInteger(420);
 ```
-!******************************************************************************************************
 
-3.write code to find palindrome
+
+## 3.write code to find palindrome.
 ```
 function isPalindrome(str){
 
@@ -98,8 +94,8 @@ function isPalindrome(str){
 
 console.log(isPalindrome("racecar"));
 ```
-!******************************************************************************************************
-4.write code to find fibnoacci series
+
+## 4.write code to find fibnoacci series.
 ```
 function printFibnoaciSum(num){
 
@@ -117,9 +113,8 @@ function printFibnoaciSum(num){
 
 console.log(printFibnoaciSum(8));
 ```
-//!******************************************************************************************************
 ```
-5. function printFibSeries(num) {
+function printFibSeries(num) {
 
     if(num==2){
         return [0,1];
@@ -133,9 +128,9 @@ console.log(printFibnoaciSum(8));
 
 console.log(printFibSeries(8));
 ```
-!******************************************************************************************************
 
-6.write code to find factorial
+
+## 6.write code to find factorial.
 ```
 function factorial(x){
     if(x == 0) {
@@ -152,9 +147,9 @@ function factorial(x){
 
 console.log(factorial(4));
 ```
-!******************************************************************************************************
 
-7.write code to find fizzbuzz
+
+## 7.write code to find fizzbuzz.
 ```
 function FizzBuzz() {
 
@@ -174,8 +169,8 @@ function FizzBuzz() {
 
 FizzBuzz();
 ```
-!******************************************************************************************************
-8.write code to find anagram
+
+## 8.write code to find anagram.
 ```
 function isAnagram(str1,str2) {
     return console.log(format(str1)===format(str2));
@@ -190,8 +185,8 @@ function format(str) {
 isAnagram("elbow","below");
 isAnagram("dormitory","dirtyroom");
 ```
-!******************************************************************************************************
-9.write code to find longest word
+
+## 9.write code to find longest word.
 ```
 function longestWordWithReduce(str){
     var finalStr=str.split(' ').reduce(function (accumulatedValue,currentValue) {
@@ -209,8 +204,7 @@ function longestWordWithReduce(str){
 console.log(longestWordWithReduce("I am Awesome"));
 ```
 
-!******************************************************************************************************
-10.write code to find duplicates in array
+## 10.write code to find duplicates in array.
 
 ```
 function findDuplicate(arr) {
@@ -231,8 +225,8 @@ function findDuplicatesinArray(arr){
 let a=[1,2,2,2,3,4,5,5,6];
 console.log(findDuplicatesinArray(a));
 ```
-!******************************************************************************************************
-10.write code to remove duplicates in array
+
+## 11.write code to remove duplicates in array.
 ```
 function removeDuplicates(arr) {
     let newList = [];
@@ -249,8 +243,8 @@ function removeDuplicates(arr) {
 let b=[1,2,2,2,3,4,5,5,6];
 console.log(removeDuplicates(b));
 ```
-!******************************************************************************************************
-12.write code to chunk the array and flatten the array
+
+## 12.write code to chunk the array and flatten the array.
 ```
 function chunkArrayIntoPieces(array,chunkLength) {
     let chunkedArray=[];
@@ -268,8 +262,8 @@ function chunkArrayIntoPieces(array,chunkLength) {
 
 chunkArrayIntoPieces([1,2,3,4,5,6,7,8,9,0],3);
 ```
-!******************************************************************************************************
-13.write code to flatten the array
+
+## 13.write code to flatten the array.
 ```
 function flattenArray(arr){
    let output= arr.reduce(function (a,b) {
@@ -283,10 +277,8 @@ function flattenArray(arr){
 console.log(flattenArray([[1,2],[3,4]]));
 
 ```
-!******************************************************************************************************
 
-
-14.Capitalize  first letters of sentence
+## 14.Capitalize  first letters of sentence.
 ```
 function capitalizeFirstLetters(str){
 
@@ -297,7 +289,9 @@ function capitalizeFirstLetters(str){
     }).join(' ');
 }
 
-Using regExp
+
+```
+## Using regExp
 ```
 function capitalizeUsingRegularExpression(str) {
     const output=str.replace(/\b[a-z]/gi,function(char){
@@ -309,9 +303,9 @@ function capitalizeUsingRegularExpression(str) {
 
 console.log(capitalizeFirstLetters("I am amazing"))
 ```
-!******************************************************************************************************
 
-15.circular letter change a-b or  z to a
+
+## 15.circular letter change a-b or  z to a.
 
 ```
 function circularLetterChange(word) {
@@ -331,10 +325,8 @@ function circularLetterChange(word) {
 console.log(circularLetterChange("abcd"));
 
 ```
-!******************************************************************************************************
 
-
-16.create permutatation of strings
+## 16.create permutatation of strings.
 ```
 function allPermutationofArrayElements(inputArray){
     let result = inputArray.reduce(function permute(res, item, key, arr) {
@@ -374,8 +366,8 @@ var inputArray = [1, 2, 3];
 console.log(allPermutationofArrayElements(inputArray));
 console.log(allPermArr(inputArray));
 ```
-!******************************************************************************************************
-17.Ends with word
+
+## 17.Ends with word.
 ```
 function confirmEnding(str, target) {
     var isTrue=str.substr(-target.length)===target;
@@ -388,9 +380,7 @@ function confirmEnding(str, target) {
 
 confirmEnding("Bastian", "n");
 ```
-!******************************************************************************************************
-
-//18.max character in word
+## 18.max character in word.
 ```
 function maxCharacter(str) {
     const charMap = {};
@@ -419,9 +409,9 @@ function maxCharacter(str) {
 
 maxCharacter("Ramanath")
 ```
-!******************************************************************************************************
 
-19.Repeat strings number of times
+
+## 19.Repeat strings number of times.
 ```
 function repeatStringNumTimes(string, times) {
     //Step 1. If times is positive, return the repeated string
@@ -434,13 +424,11 @@ function repeatStringNumTimes(string, times) {
         return "";
     }
 }
-```
-```
+
 function repeatStringNumberTimes(str, num) {
     return num < 0 ? "": new Array(num + 1).join(str);
 }
-```
-```
+
 function repeatStrings(str, num) {
     let repeatedStrings = '';
     while (num > 0) {
@@ -453,9 +441,10 @@ function repeatStrings(str, num) {
 
 console.log(repeatStrings("hi", 5));
 ```
-//******************************************************************************************************
-```20.//First letter of sentence should be capital letter
 
+
+## 20.First letter of sentence should be capital letter.
+```
  function titleCase(str) {
     return str.toLowerCase().split(' ').map(function(word) {
          return word.replace(word[0], word[0].toUpperCase());
@@ -463,11 +452,3 @@ console.log(repeatStrings("hi", 5));
  }
  titleCase("I'm a little tea pot");
 ```
-******************************************************************************************************
-
-
-
-
-
-
-
